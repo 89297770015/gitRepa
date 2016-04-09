@@ -1,12 +1,12 @@
-import java.util.*;
+п»їimport java.util.*;
 class Calculate{
 	public static void main(String[] args){
 		int a , b;
 		boolean check = false;
         Scanner sc = new Scanner(System.in);
-        System.out.println("введите первый операнд целое число ");
+        System.out.println("РІРІРµРґРёС‚Рµ РїРµСЂРІС‹Р№ РѕРїРµСЂР°РЅРґ С†РµР»РѕРµ С‡РёСЃР»Рѕ ");
         a = sc.nextInt();
-        System.out.println("введите операцию + , - , * , / ");
+        System.out.println("РІРІРµРґРёС‚Рµ РѕРїРµСЂР°С†РёСЋ + , - , * , / ");
         String oper = sc.next();
         check = checkOper(oper);
 		System.out.println(check);
@@ -20,7 +20,7 @@ class Calculate{
          |oper.equals("-")
          |oper.equals("*")  
          |oper.equals("/"))
-        )System.out.println("неправильный оператор");
+        )System.out.println("РЅРµРїСЂР°РІРёР»СЊРЅС‹Р№ РѕРїРµСЂР°С‚РѕСЂ");
     }
     private static boolean checkOper(String oper) {
       if(!(oper.equals("+")
